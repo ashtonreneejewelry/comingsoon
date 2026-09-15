@@ -123,3 +123,97 @@ footer{
   .story-copy{padding:60px 30px}
   .package-photo{min-height:390px}
 }
+
+
+/* VERSION 5 — final layout lock before photography */
+/* Tighten collection intro-to-first-piece spacing */
+.collection-heading{
+  margin-bottom:48px;
+}
+
+/* Slightly tighten the five bracelet sections while preserving photography scale */
+.collection-editorial{
+  gap:62px;
+}
+.photo-stage{
+  height:390px;
+}
+
+/* Slightly reduce Our Story height without changing split-screen layout */
+.story-photo{
+  min-height:530px;
+}
+.story-copy{
+  padding-top:62px;
+  padding-bottom:62px;
+}
+.story-copy>p{
+  margin-bottom:12px;
+}
+.story blockquote{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+/* Refine Sizing & FAQ */
+.faq{
+  padding-top:82px;
+  padding-bottom:72px;
+}
+.accordion details{
+  padding:18px 0;
+}
+.accordion summary{
+  font-size:24px;
+  list-style:none;
+}
+.accordion summary::-webkit-details-marker{
+  display:none;
+}
+.accordion summary::before{
+  content:"▶";
+  display:inline-block;
+  font-family:Inter,sans-serif;
+  font-size:12px;
+  margin-right:10px;
+  transform:translateY(-1px);
+}
+.accordion details[open] summary::before{
+  transform:rotate(90deg) translateX(-1px);
+}
+
+/* Tighten Shipping & Returns approximately 10–15% */
+.policies{
+  padding-top:78px;
+  padding-bottom:78px;
+}
+.policy-title{
+  margin-bottom:54px;
+}
+.policy-grid{
+  gap:45px 75px;
+}
+.policy-grid article{
+  padding-top:20px;
+}
+.policy-grid h3{
+  margin-top:9px;
+  margin-bottom:8px;
+}
+.policy-grid p{
+  margin-top:0;
+  margin-bottom:0;
+}
+
+@media(max-width:900px){
+  .collection-heading{margin-bottom:42px}
+  .collection-editorial{gap:58px}
+  .photo-stage{height:340px}
+  .story-photo{min-height:380px}
+  .story-copy{padding-top:54px;padding-bottom:54px}
+  .faq{padding-top:66px;padding-bottom:62px}
+  .accordion details{padding:17px 0}
+  .policies{padding-top:66px;padding-bottom:66px}
+  .policy-title{margin-bottom:45px}
+  .policy-grid{gap:38px}
+}
