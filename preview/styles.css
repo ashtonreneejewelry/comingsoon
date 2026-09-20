@@ -225,5 +225,12 @@ footer{
 /* Final founder and packaging photography */
 .story-photo,.package-photo{overflow:hidden}
 .story-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
-.package-photo{display:grid;place-items:center;background:#f5f1eb}
-.package-photo img{display:block;width:100%;height:100%;object-fit:contain}
+.aqua-stage{height:470px}
+.aqua-stage img{object-position:center}
+.package-photo{display:grid;place-items:center;min-height:620px;background:#f5f1eb}
+.package-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 65%}
+
+@media(max-width:900px){
+  .aqua-stage{height:340px}
+  .package-photo{min-height:390px}
+}
