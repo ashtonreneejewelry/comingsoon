@@ -221,11 +221,12 @@ footer{
 /* Final photography */
 .hero-frame,.photo-stage{overflow:hidden;background:#f0e9df}
 .hero-frame img,.photo-stage img{display:block;width:100%;height:100%;object-fit:cover}
+.photo-stage img.product-photo{object-fit:contain;background:#f1efeb}
 
 /* Final founder and packaging photography */
 .story-photo,.package-photo{overflow:hidden}
 .story-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
-.aqua-stage{height:470px}
+.aqua-stage{height:390px}
 .aqua-stage img{object-position:center}
 .package-photo{display:grid;place-items:center;min-height:620px;background:#f5f1eb}
 .package-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 65%}
