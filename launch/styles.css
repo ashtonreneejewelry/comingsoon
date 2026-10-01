@@ -1,0 +1,40 @@
+/* Launch-day commerce details */
+.launch-offer{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:34px;
+  align-items:center;
+  margin:-10px 0 58px;
+  padding:22px 28px;
+  background:var(--lav);
+  border-left:2px solid var(--gold);
+}
+.launch-offer span{
+  color:var(--purple);
+  font-size:9px;
+  font-weight:500;
+  letter-spacing:.2em;
+  white-space:nowrap;
+}
+.launch-offer p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+.launch-offer strong{
+  color:var(--purple-deep);
+  font-weight:500;
+  letter-spacing:.04em;
+}
+.product-button{
+  margin-top:10px;
+  padding:13px 18px;
+}
+@media(max-width:700px){
+  .launch-offer{
+    grid-template-columns:1fr;
+    gap:8px;
+    margin-bottom:45px;
+    padding:22px;
+  }
+}
