@@ -235,3 +235,29 @@ footer{
   .aqua-stage{height:340px}
   .package-photo{min-height:390px}
 }
+
+/* PRELAUNCH — public collection preview */
+.announcement-bar{
+  min-height:32px;
+  background:var(--purple-deep);
+  color:#fff;
+  text-align:center;
+  font-size:9px;
+  letter-spacing:.22em;
+  padding:8px 18px;
+}
+.price small{
+  display:block;
+  margin-top:4px;
+  color:var(--purple);
+  font-size:9px;
+  font-weight:500;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+@media(max-width:520px){
+  .announcement-bar{
+    font-size:7px;
+    letter-spacing:.16em;
+  }
+}
