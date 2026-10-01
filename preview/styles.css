@@ -261,3 +261,45 @@ footer{
     letter-spacing:.16em;
   }
 }
+
+/* Launch countdown */
+.countdown{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  max-width:440px;
+  margin:24px 0 26px;
+  border-top:1px solid var(--gold-soft);
+  border-bottom:1px solid var(--gold-soft);
+  padding:16px 0 14px;
+}
+.countdown-unit{
+  text-align:center;
+  padding:0 12px;
+}
+.countdown-unit:not(:last-child){
+  border-right:1px solid var(--gold-soft);
+}
+.countdown-unit strong{
+  display:block;
+  color:var(--purple-deep);
+  font-family:"Cormorant Garamond",serif;
+  font-size:34px;
+  font-weight:500;
+  line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.countdown-unit span{
+  display:block;
+  margin-top:5px;
+  color:var(--muted);
+  font-size:8px;
+  font-weight:500;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+@media(max-width:520px){
+  .countdown{max-width:none;margin-top:22px}
+  .countdown-unit{padding:0 6px}
+  .countdown-unit strong{font-size:29px}
+  .countdown-unit span{font-size:7px;letter-spacing:.09em}
+}
