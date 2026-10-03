@@ -1,30 +1,59 @@
 /* Launch-day commerce details */
 .launch-offer{
-  display:grid;
-  grid-template-columns:auto 1fr;
-  gap:34px;
-  align-items:center;
   margin:-10px 0 58px;
-  padding:22px 28px;
+  padding:36px 32px;
   background:var(--lav);
   border-left:2px solid var(--gold);
-}
-.launch-offer span{
-  color:var(--purple);
-  font-size:9px;
-  font-weight:500;
-  letter-spacing:.2em;
-  white-space:nowrap;
 }
 .launch-offer p{
   margin:0;
   color:var(--muted);
   font-size:14px;
 }
-.launch-offer strong{
+.launch-offer-heading h3{
+  font-size:36px;
+  margin:12px 0 14px;
+}
+.launch-offer-heading .eyebrow{
+  color:var(--purple);
+  font-size:9px;
+}
+.stack-discounts{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:24px;
+  margin:28px 0 24px;
+}
+.stack-discounts>div{
+  border-top:1px solid var(--gold-soft);
+  padding-top:18px;
+}
+.stack-discounts dt{
+  font-size:11px;
+  color:var(--muted);
+}
+.stack-discounts dd{
+  margin:0;
+}
+.stack-saving{
+  font-family:"Cormorant Garamond",serif;
+  font-size:30px;
   color:var(--purple-deep);
+}
+.stack-code{
+  color:var(--purple-deep);
+  font-size:12px;
   font-weight:500;
-  letter-spacing:.04em;
+  letter-spacing:.14em;
+}
+.stack-minimum{
+  color:var(--muted);
+  font-size:10px;
+  padding-top:6px;
+}
+.launch-offer .stack-instructions{
+  font-size:12px;
+  max-width:700px;
 }
 .product-button{
   margin-top:10px;
@@ -55,9 +84,11 @@ footer nav{
 }
 @media(max-width:700px){
   .launch-offer{
-    grid-template-columns:1fr;
-    gap:8px;
     margin-bottom:45px;
     padding:22px;
+  }
+  .stack-discounts{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:22px 16px;
   }
 }
