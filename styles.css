@@ -262,6 +262,14 @@ footer{
   }
 }
 
+/* Keep the portrait and story readable on mobile. */
+@media(max-width:900px){
+  .story{grid-template-columns:minmax(0,1fr)}
+  .story-photo{min-height:0;height:auto;border-right:0}
+  .story-photo img{height:auto;object-fit:contain}
+  .story-copy{max-width:none;padding:48px 28px}
+}
+
 /* Launch countdown */
 .countdown{
   display:grid;
