@@ -303,3 +303,28 @@ footer{
   .countdown-unit strong{font-size:29px}
   .countdown-unit span{font-size:7px;letter-spacing:.09em}
 }
+
+/* Social profiles */
+.social-links{
+  display:flex;
+  justify-content:center;
+  gap:22px;
+  flex-wrap:wrap;
+  margin:28px 0 0;
+}
+.social-links a{
+  color:var(--gold-soft);
+  text-decoration:none;
+  font-size:10px;
+  font-weight:500;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  transition:color .2s;
+}
+.social-links a:hover,
+.social-links a:focus-visible{
+  color:#fff;
+}
+footer nav{
+  margin:28px 0 34px;
+}
