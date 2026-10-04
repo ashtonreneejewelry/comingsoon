@@ -1,3 +1,36 @@
+/* Launch-day materials copy, matching the approved Etsy graphic. */
+.materials .material-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.gold-filled-story{
+  grid-column:1/-1;
+}
+.gold-filled-benefits{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:32px;
+  margin-top:28px;
+}
+.gold-filled-benefits h4{
+  font-family:"Cormorant Garamond",serif;
+  font-size:26px;
+  font-weight:500;
+  line-height:1.15;
+  margin:0 0 14px;
+}
+.gold-filled-benefits p{
+  margin:0;
+}
+.gold-filled-story .gold-filled-note{
+  margin-top:26px;
+}
+@media(max-width:900px){
+  .materials .material-grid,.gold-filled-benefits{
+    grid-template-columns:minmax(0,1fr);
+  }
+  .gold-filled-benefits{gap:24px}
+}
+
 /* Launch-day commerce details */
 .launch-offer{
   margin:-10px 0 58px;
