@@ -1,19 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Open the collection automatically at launch time. -->
-  <script>
-(() => {
-  const launchTime = Date.parse('2026-10-05T10:00:00-05:00');
-  const openCollection = () => {
-    if (Date.now() >= launchTime) window.location.replace('/launch/');
-  };
-  openCollection();
-  setInterval(openCollection, 1000);
-  window.addEventListener('pageshow', openCollection);
-  document.addEventListener('visibilitychange', openCollection);
-})();
-  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNF8X8FGDR"></script>
   <script>
@@ -25,12 +12,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="ASHTON RENÉE creates timeless, meaningful jewelry designed for everyday wear.">
-  <title>ASHTON RENÉE | The Debut Collection</title>
+  <meta name="robots" content="index,follow">
+  <title>ASHTON RENÉE | Shop the Debut Collection</title>
   <link rel="canonical" href="https://ashtonreneejewelry.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ASHTON RENÉE">
-  <meta property="og:title" content="ASHTON RENÉE | The Debut Collection">
-  <meta property="og:description" content="Timeless, meaningful jewelry designed for everyday wear. Made to be worn. Made to mean something.">
+  <meta property="og:title" content="ASHTON RENÉE | Shop the Debut Collection">
+  <meta property="og:description" content="Shop five meaningful bracelets handcrafted with natural gemstones, freshwater pearls, and 14K gold-filled beads.">
   <meta property="og:url" content="https://ashtonreneejewelry.com/">
   <meta property="og:image" content="https://ashtonreneejewelry.com/social-sharing.jpg">
   <meta property="og:image:type" content="image/jpeg">
@@ -38,23 +26,24 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="ASHTON RENÉE logo beside the five bracelets in The Debut Collection">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ASHTON RENÉE | The Debut Collection">
-  <meta name="twitter:description" content="Timeless, meaningful jewelry designed for everyday wear.">
+  <meta name="twitter:title" content="ASHTON RENÉE | Shop the Debut Collection">
+  <meta name="twitter:description" content="Shop five meaningful bracelets handcrafted with natural gemstones, freshwater pearls, and 14K gold-filled beads.">
   <meta name="twitter:image" content="https://ashtonreneejewelry.com/social-sharing.jpg">
   <meta name="twitter:image:alt" content="ASHTON RENÉE logo beside the five bracelets in The Debut Collection">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261003-mobile-story">
+  <link rel="stylesheet" href="/preview/styles.css?v=20261003-mobile-story">
+  <link rel="stylesheet" href="/launch/styles.css?v=20261004-gold-filled">
 </head>
 <body>
-<div class="announcement-bar">THE DEBUT COLLECTION LAUNCHES OCTOBER 5 AT 10:00 AM CT</div>
+<div class="announcement-bar">THE DEBUT COLLECTION IS NOW AVAILABLE</div>
 
 <header class="site-header">
   <a class="wordmark" href="#top">ASHTON RENÉE</a>
   <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
   <nav id="site-nav" class="site-nav">
-    <a href="#collection">Collection</a>
+    <a href="https://ashtonreneejewelry.etsy.com" target="_blank" rel="noopener">Shop</a>
     <a href="#story">Our Story</a>
     <a href="#materials">Materials & Care</a>
     <a href="#faq">FAQ</a>
@@ -71,17 +60,11 @@
       <div class="gold-rule"></div>
       <p class="lead">Timeless, meaningful pieces designed for everyday wear and inspired by the people and stories we carry with us.</p>
       <p class="tagline">Made to be worn. Made to mean something.</p>
-      <div class="countdown" role="timer" aria-label="Time remaining until the debut collection launches October 5 at 10:00 AM Central Time">
-        <div class="countdown-unit"><strong data-countdown="days">--</strong><span>Days</span></div>
-        <div class="countdown-unit"><strong data-countdown="hours">--</strong><span>Hours</span></div>
-        <div class="countdown-unit"><strong data-countdown="minutes">--</strong><span>Minutes</span></div>
-        <div class="countdown-unit"><strong data-countdown="seconds">--</strong><span>Seconds</span></div>
-      </div>
-      <a class="button" href="#collection">Explore the collection <small>Launching Oct. 5 · 10 AM CT</small></a>
+      <a class="button" href="https://ashtonreneejewelry.etsy.com" target="_blank" rel="noopener">Shop the collection <small>Available now</small></a>
     </div>
     <div class="editorial-hero">
       <div class="hero-frame">
-        <img src="collection-final.webp" width="1800" height="1800" fetchpriority="high" alt="Five ASHTON RENÉE bracelets stacked on a wrist, featuring polished gold-filled beads, amethyst, freshwater pearls, rose quartz and aquamarine">
+        <img src="/preview/collection-final.webp" width="1800" height="1800" fetchpriority="high" alt="Five ASHTON RENÉE bracelets stacked on a wrist, featuring polished gold-filled beads, amethyst, freshwater pearls, rose quartz and aquamarine">
       </div>
     </div>
   </section>
@@ -99,30 +82,45 @@
       <p>Five bracelets share the same understated point of view while natural gemstones and freshwater pearls give each its own character.</p>
     </div>
 
+    <section class="launch-offer" aria-labelledby="stack-offer-title">
+      <div class="launch-offer-heading">
+        <p class="eyebrow">BUILD YOUR STACK</p>
+        <h3 id="stack-offer-title">Your pieces. Your combination.</h3>
+        <p>Choose the bracelets that feel like yours, with a little more to enjoy when you wear them together.</p>
+      </div>
+      <dl class="stack-discounts">
+        <div><dt>Two bracelets</dt><dd class="stack-saving">Save $6</dd><dd class="stack-code">STACK2</dd><dd class="stack-minimum">On orders of $96 or more</dd></div>
+        <div><dt>Three bracelets</dt><dd class="stack-saving">Save $12</dd><dd class="stack-code">STACK3</dd><dd class="stack-minimum">On orders of $144 or more</dd></div>
+        <div><dt>Four bracelets</dt><dd class="stack-saving">Save $18</dd><dd class="stack-code">STACK4</dd><dd class="stack-minimum">On orders of $192 or more</dd></div>
+        <div><dt>Five bracelets</dt><dd class="stack-saving">Save $24</dd><dd class="stack-code">STACK5</dd><dd class="stack-minimum">On orders of $240 or more</dd></div>
+      </dl>
+      <p class="stack-instructions">Add your bracelets to your Etsy cart, then enter the matching code in the shop coupon field at checkout. Use one stack code per order.</p>
+    </section>
+
     <div class="collection-editorial">
       <article class="piece piece-wide">
-        <div class="photo-stage"><img class="product-photo" src="the-ashton-final.webp" width="1600" height="1600" loading="lazy" decoding="async" alt="The Ashton stretch bracelet arranged in a circle, handcrafted with polished 14K gold-filled beads in graduated sizes"></div>
-        <div class="piece-copy"><p class="number">01 / 05</p><h3>The Ashton</h3><p class="piece-kicker">The signature.</p><p>All gold and intentionally simple, The Ashton is the foundation of the collection. Made entirely with 14K gold-filled beads.</p><p class="price">$48 <small>Available October 5</small></p></div>
+        <div class="photo-stage"><img class="product-photo" src="/preview/the-ashton-final.webp" width="1600" height="1600" loading="lazy" decoding="async" alt="The Ashton stretch bracelet arranged in a circle, handcrafted with polished 14K gold-filled beads in graduated sizes"></div>
+        <div class="piece-copy"><p class="number">01 / 05</p><h3>The Ashton</h3><p class="piece-kicker">The signature.</p><p>All gold and intentionally simple, The Ashton is the foundation of the collection. Made entirely with 14K gold-filled beads.</p><p class="price">$48</p><a class="button product-button" data-listing="the-ashton" href="https://ashtonreneejewelry.etsy.com/listing/4570924601/14k-gold-filled-beaded-stretch-bracelet" target="_blank" rel="noopener">Shop The Ashton</a></div>
       </article>
 
       <article class="piece piece-reverse">
-        <div class="photo-stage amethyst-stage"><img class="product-photo" src="the-dianne-final.webp" width="1600" height="1600" loading="lazy" decoding="async" alt="The Dianne stretch bracelet arranged in a circle, with five purple amethyst beads centered between polished 14K gold-filled beads"></div>
-        <div class="piece-copy"><p class="number">02 / 05</p><h3>The Dianne</h3><p class="piece-kicker">A touch of amethyst.</p><p>Warm 14K gold-filled beads meet natural amethyst for a subtle touch of color that remains easy to wear.</p><p class="price">$48 <small>Available October 5</small></p></div>
+        <div class="photo-stage amethyst-stage"><img class="product-photo" src="/preview/the-dianne-final.webp" width="1600" height="1600" loading="lazy" decoding="async" alt="The Dianne stretch bracelet arranged in a circle, with five purple amethyst beads centered between polished 14K gold-filled beads"></div>
+        <div class="piece-copy"><p class="number">02 / 05</p><h3>The Dianne</h3><p class="piece-kicker">A touch of amethyst.</p><p>Warm 14K gold-filled beads meet natural amethyst for a subtle touch of color that remains easy to wear.</p><p class="price">$48</p><a class="button product-button" data-listing="the-dianne" href="https://ashtonreneejewelry.etsy.com/listing/4570940882/amethyst-and-14k-gold-filled-stretch" target="_blank" rel="noopener">Shop The Dianne</a></div>
       </article>
 
       <article class="piece">
-        <div class="photo-stage pearl-stage"><img class="product-photo" src="the-melissa-final.webp" width="1600" height="1600" loading="lazy" decoding="async" alt="The Melissa stretch bracelet arranged in a circle, with four freshwater pearls and polished 14K gold-filled beads"></div>
-        <div class="piece-copy"><p class="number">03 / 05</p><h3>The Melissa</h3><p class="piece-kicker">Classic pearls, made effortless.</p><p>Freshwater pearl accents meet 14K gold-filled beads for a relaxed, modern take on a classic.</p><p class="price">$48 <small>Available October 5</small></p></div>
+        <div class="photo-stage pearl-stage"><img class="product-photo" src="/preview/the-melissa-final.webp" width="1600" height="1600" loading="lazy" decoding="async" alt="The Melissa stretch bracelet arranged in a circle, with four freshwater pearls and polished 14K gold-filled beads"></div>
+        <div class="piece-copy"><p class="number">03 / 05</p><h3>The Melissa</h3><p class="piece-kicker">Classic pearls, made effortless.</p><p>Freshwater pearl accents meet 14K gold-filled beads for a relaxed, modern take on a classic.</p><p class="price">$48</p><a class="button product-button" data-listing="the-melissa" href="https://ashtonreneejewelry.etsy.com/listing/4570926229/freshwater-pearl-and-14k-gold-filled" target="_blank" rel="noopener">Shop The Melissa</a></div>
       </article>
 
       <article class="piece piece-reverse">
-        <div class="photo-stage rose-stage"><img class="product-photo" src="the-samantha-final.webp" width="1600" height="1600" loading="lazy" decoding="async" alt="The Samantha stretch bracelet arranged in a circle, with four pale pink rose quartz beads surrounding a graduated 14K gold-filled bead center"></div>
-        <div class="piece-copy"><p class="number">04 / 05</p><h3>The Samantha</h3><p class="piece-kicker">Soft, subtle and warm.</p><p>Natural rose quartz adds a delicate blush tone, paired with 14K gold-filled beads for warmth and contrast.</p><p class="price">$48 <small>Available October 5</small></p></div>
+        <div class="photo-stage rose-stage"><img class="product-photo" src="/preview/the-samantha-final.webp" width="1600" height="1600" loading="lazy" decoding="async" alt="The Samantha stretch bracelet arranged in a circle, with four pale pink rose quartz beads surrounding a graduated 14K gold-filled bead center"></div>
+        <div class="piece-copy"><p class="number">04 / 05</p><h3>The Samantha</h3><p class="piece-kicker">Soft, subtle and warm.</p><p>Natural rose quartz adds a delicate blush tone, paired with 14K gold-filled beads for warmth and contrast.</p><p class="price">$48</p><a class="button product-button" data-listing="the-samantha" href="https://ashtonreneejewelry.etsy.com/listing/4570926727/rose-quartz-and-14k-gold-filled-stretch" target="_blank" rel="noopener">Shop The Samantha</a></div>
       </article>
 
       <article class="piece">
-        <div class="photo-stage aqua-stage"><img class="product-photo" src="the-chelsea-final.webp" width="1600" height="1600" loading="lazy" decoding="async" alt="The Chelsea stretch bracelet arranged in a circle, with three pale blue aquamarine beads and polished 14K gold-filled beads"></div>
-        <div class="piece-copy"><p class="number">05 / 05</p><h3>The Chelsea</h3><p class="piece-kicker">A hint of blue.</p><p>Natural aquamarine gives this gold-forward design a fresh, understated touch of color.</p><p class="price">$48 <small>Available October 5</small></p></div>
+        <div class="photo-stage aqua-stage"><img class="product-photo" src="/preview/the-chelsea-final.webp" width="1600" height="1600" loading="lazy" decoding="async" alt="The Chelsea stretch bracelet arranged in a circle, with three pale blue aquamarine beads and polished 14K gold-filled beads"></div>
+        <div class="piece-copy"><p class="number">05 / 05</p><h3>The Chelsea</h3><p class="piece-kicker">A hint of blue.</p><p>Natural aquamarine gives this gold-forward design a fresh, understated touch of color.</p><p class="price">$48</p><a class="button product-button" data-listing="the-chelsea" href="https://ashtonreneejewelry.etsy.com/listing/4570942036/aquamarine-and-14k-gold-filled-stretch" target="_blank" rel="noopener">Shop The Chelsea</a></div>
       </article>
     </div>
 
@@ -130,7 +128,7 @@
   </section>
 
   <section id="story" class="story">
-    <div class="story-photo"><img src="ashton-profile.png" width="2000" height="2000" loading="lazy" decoding="async" alt="Ashton, founder of ASHTON RENÉE, smiling outdoors in a white sweater and gold earrings"></div>
+    <div class="story-photo"><img src="/preview/ashton-profile.png" width="2000" height="2000" loading="lazy" decoding="async" alt="Ashton, founder of ASHTON RENÉE, smiling outdoors in a white sweater and gold earrings"></div>
     <div class="story-copy">
       <p class="eyebrow">OUR STORY</p>
       <h2>Jewelry can be beautiful.<br><em>It can also mean something.</em></h2>
@@ -145,7 +143,15 @@
   <section id="materials" class="materials section-pad">
     <div class="materials-head"><p class="eyebrow">MATERIALS & CARE</p><h2>Beautiful materials.<br><em>Chosen with intention.</em></h2></div>
     <div class="material-grid">
-      <article><span>01</span><h3>14K gold-filled</h3><p>Gold-filled material is made by bonding a substantial layer of real gold to a base metal. It offers greater durability than traditional gold plating while providing the warm, classic appearance at the heart of the collection.</p></article>
+      <article class="gold-filled-story" aria-labelledby="gold-filled-title">
+        <span>01</span><h3 id="gold-filled-title">Why we choose 14k gold-filled</h3>
+        <div class="gold-filled-benefits">
+          <div><h4>A thicker layer of gold</h4><p>Our beads pair a brass core with a bonded layer of 14k gold alloy. This layer makes up 5% of their metal weight and is much thicker than standard gold plating.</p></div>
+          <div><h4>Beauty that lasts</h4><p>A rich gold finish made for everyday wear, with color that lasts longer than standard gold plating. With proper care, gold-filled beads can be enjoyed for years.</p></div>
+          <div><h4>Everyday elegance</h4><p>The warm look of solid gold at a more accessible price.</p></div>
+        </div>
+        <p class="gold-filled-note">Our beads are lead, cadmium, and nickel free.</p>
+      </article>
       <article><span>02</span><h3>Natural gemstones</h3><p>The Dianne, Samantha and Chelsea feature natural amethyst, rose quartz and aquamarine. Slight differences in color, pattern, clarity and appearance are expected.</p></article>
       <article><span>03</span><h3>Freshwater pearls</h3><p>The Melissa features genuine freshwater pearls. Subtle differences in shape, surface and luster are natural characteristics and give each piece its own character.</p></article>
     </div>
@@ -153,7 +159,7 @@
   </section>
 
   <section class="packaging">
-    <div class="package-photo"><img src="packaging-final.webp" width="1600" height="1600" loading="lazy" decoding="async" alt="The Ashton bracelet displayed on a cream ASHTON RENÉE jewelry pouch with a pink polishing cloth"></div>
+    <div class="package-photo"><img src="/preview/packaging-final.webp" width="1600" height="1600" loading="lazy" decoding="async" alt="The Ashton bracelet displayed on a cream ASHTON RENÉE jewelry pouch with a pink polishing cloth"></div>
     <div class="package-copy"><p class="eyebrow">THOUGHTFULLY PACKAGED</p><h2>Ready to give.<br><em>Beautiful to receive.</em></h2><p>Every ASHTON RENÉE bracelet arrives in a branded pouch with a polishing cloth and care information, whether you're choosing something meaningful for someone you love or something just for you.</p></div>
   </section>
 
@@ -195,9 +201,9 @@
     <a href="https://www.tiktok.com/@ashtonreneejewelry" target="_blank" rel="noopener noreferrer">TikTok</a>
     <a href="https://www.pinterest.com/ashtonreneejewelry/" target="_blank" rel="noopener noreferrer">Pinterest</a>
   </div>
-  <nav><a href="#collection">Collection</a><a href="#story">Our Story</a><a href="#materials">Materials & Care</a><a href="#faq">Sizing & FAQ</a><a href="#shipping">Shipping & Returns</a><a href="#contact">Contact</a></nav>
+  <nav><a href="https://ashtonreneejewelry.etsy.com" target="_blank" rel="noopener">Shop</a><a href="#story">Our Story</a><a href="#materials">Materials & Care</a><a href="#faq">Sizing & FAQ</a><a href="#shipping">Shipping & Returns</a><a href="#contact">Contact</a></nav>
   <p>© 2026 ASHTON RENÉE. All rights reserved.</p>
 </footer>
-<script src="script.js?v=20261002-countdown"></script>
+<script src="/preview/script.js?v=20261002-countdown"></script>
 </body>
 </html>
