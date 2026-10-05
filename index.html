@@ -1,6 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Open the collection automatically at launch time. -->
+  <script>
+(() => {
+  const launchTime = Date.parse('2026-10-05T10:00:00-05:00');
+  const openCollection = () => {
+    if (Date.now() >= launchTime) window.location.replace('/launch/');
+  };
+  openCollection();
+  setInterval(openCollection, 1000);
+  window.addEventListener('pageshow', openCollection);
+  document.addEventListener('visibilitychange', openCollection);
+})();
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNF8X8FGDR"></script>
   <script>
